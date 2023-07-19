@@ -1,0 +1,212 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+body{
+    height: 100vh;
+    background-color:white;
+    color:black;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.logo{
+    text-align: left;
+    background-color:turquoise;
+}
+
+.logo img{
+    width: 100px;
+    margin: 8px;
+}
+.linea{
+    background-color: rgb(234, 92, 163);
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 40px;
+}
+nav{
+    width: 100%;
+    display:flex;
+    justify-content:space-around;
+    align-items:first center;
+    background-color:turquoise;
+    padding-left:10px;
+    padding-right: 40px;
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Ysabeau SC', sans-serif;
+    color: black;
+}
+.cont-ul{
+    display: flex;
+    align-items: center;
+}
+li{
+    list-style: none;
+    cursor:pointer;
+    padding: 1.5vw;
+    transition: all 1s ease 0s;
+}
+li:hover{
+    background-color:white;
+}
+.develop{
+    position: relative;
+}
+.develop>li:hover{
+    background-color: darkgray;
+    display: none;
+}
+.ul-second{
+    display: none;
+    position:absolute;
+    margin-top: 1.5vw;
+}
+.ul-second>li{
+    width: 182px;
+    transform: translateX(-20px);
+    border-bottom: solid 1px #fff;
+    text-align: center;
+    background-color: white;
+}
+.ul-second>li:hover{
+    background-color: darkgray;
+}
+.develop:hover>.ul-second{
+    display: block;
+}
+.ul-third{
+    position: absolute;
+    transform: translateX(100%);
+    right: 0;
+    top:40%;
+    display: none;
+    background-color: white;
+}
+.ul-third>li{
+    padding: 1.5vw;
+    border-bottom:solid 1px black;
+
+}
+.front:hover>.ul-third{
+    display:block;
+}
+@media(max-width:900px){
+    .logo-danicodex{
+        display:none;
+    }
+}
+.Titulo{
+    font-family: 'Seaweed Script', cursive;
+    text-align: center;
+    margin-top: 70px;
+    color:rgb(234, 92, 163);
+}
+.intro{
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    line-height: 25px;
+
+}
+.slider-frame{
+    width: 800px;
+    height: 500px;
+    margin: 50px auto 0;
+    overflow: hidden;
+    
+}
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 15s infinite ease-in-out;
+}
+.slider-frame li{
+    list-style: none;
+}
+.slider-frame  img{
+    width: 765px;
+    height: auto;
+    margin: 0px;
+}
+@keyframes slide{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+}
+.first{
+   text-align: center;
+   margin: 50px;
+   display:grid;
+   grid-template-columns: repeat(auto-fit, minmax(50px, 335px));
+
+}
+.first img{
+    width: 170px;
+    margin: 50px;
+    margin-top: 100px;
+}
+.first p{
+    font-family: 'Work Sans', sans-serif;
+    margin-right: 40px;
+    
+}
+@media (max-width:600px){
+
+    .slider-frame{
+        width: 360px;
+        height: 500px;
+        margin: 50px auto 0;
+        overflow: hidden;
+    }
+    .slider-frame  img{
+        width:345px;
+        height: auto;
+    }
+    .first{
+        text-align: center;
+        margin: 50px;
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(30px, 135px));
+     
+     }
+     .first img{
+         width: 90px;
+         margin: 30px;
+         margin-top: 60px;
+     }
+     .first p{
+         margin-right: 10px;
+         font-size: 10px;
+     }
+     .logo img{
+        width: 50px;
+        margin: 8px;
+     }
+     nav{
+        width: 100%;
+        display:flex;
+        justify-content:space-around;
+        align-items:first center;
+        background-color:turquoise;
+        padding-left:0px;
+        padding-right: 50px;
+        font-family: 'Belanosima', sans-serif;
+        font-family: 'Pacifico', cursive;
+        font-family: 'Ysabeau SC', sans-serif;
+        color: black;
+     }
+
+}
